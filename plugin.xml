@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="com.commontime.cordova.offlinehttp"
+        id="uk.co.duckmonkey.cordova.offlinehttp"
         version="0.0.0">
 
-	<name>Offline HTTP Plugin</name>
+	<name>Offline HTTP client</name>
 	
 	<engines>
 		<engine name="cordova" version=">=4.1.1"/>
-	</engines>
+	</engines>	
 
 	<js-module src="www/offlinehttp.js" name="OfflineHTTP">
 		<clobbers target="plugins.offlinehttp" />
 	</js-module>
-
-	<platform name="android">		
-				
-		<config-file target="res/xml/config.xml" parent="/*">
-			<feature name="Preferences">
-				<param name="android-package" value="com.commontime.cordova.plugins.offlinehttp.OfflineHTTP"/>
-			</feature>
-		</config-file>		
-		
-		<source-file src="src/android/com/commontime/cordova/plugins/offlinehttp/OfflineHTTP.java" target-dir="src/com/commontime/cordova/plugins/offlinehttp/"/>
-		<source-file src="src/android/com/commontime/cordova/plugins/offlinehttp/OfflineHTTPService.java" target-dir="src/com/commontime/cordova/plugins/offlinehttp/"/>
-		<source-file src="src/android/com/commontime/cordova/plugins/offlinehttp/Request.java" target-dir="src/com/commontime/cordova/plugins/offlinehttp/"/>
-		
+	
+	<platform name="android">					
+		<source-file src="src/android/uk/co/duckmonkey/cordova/offlinehttp/OfflineHTTP.java" target-dir="src/cuk/co/duckmonkey/cordova/offlinehttp/"/>				
 	</platform>
 </plugin>
