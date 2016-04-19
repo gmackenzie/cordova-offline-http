@@ -22,6 +22,8 @@
 		</config-file>		
 		
 		<source-file src="src/android/com/commontime/cordova/plugins/offlinehttp/OfflineHTTP.java" target-dir="src/com/commontime/cordova/plugins/offlinehttp/"/>
+		<source-file src="src/android/com/commontime/cordova/plugins/offlinehttp/OfflineHTTPService.java" target-dir="src/com/commontime/cordova/plugins/offlinehttp/"/>
+		<source-file src="src/android/com/commontime/cordova/plugins/offlinehttp/Request.java" target-dir="src/com/commontime/cordova/plugins/offlinehttp/"/>
 		
 	</platform>
 </plugin>
